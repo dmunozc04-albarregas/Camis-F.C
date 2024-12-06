@@ -14,6 +14,7 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    color: var(--principal);
 }
 
 header{
@@ -60,7 +61,6 @@ header a, .sub-header a{
     filter: brightness(1.2);
 }
 
-
 .buscador{
     display: flex;
     flex-direction: row;
@@ -68,6 +68,7 @@ header a, .sub-header a{
     height: 2.5em;
     border: 1px solid var(--negro);
     border-radius: 50em;
+    margin-left: 6em;
 }
 
 .buscador input[type=search]{
@@ -123,59 +124,57 @@ header a, .sub-header a{
     font-size: 1rem;
 }
 
-
-.equipos{
+.tarjetas{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1em;
-    padding: 2em;
+    gap: 2em;
+    padding-top: .5em;
 }
 
-.equipo{
+.tarjeta{
+    color: var(--negro);
     border: 2px solid var(--negro);
-    border-radius: 2em;
-    width: 15em;
-    height: 11.5em;
-    padding-top: .5em;
+    width: 25em;
+    height: 32.5em;
+    border-radius: 1em;
+    padding: .5em;
+    background-color: var(--blanco);
+    margin-right: .5em;
     text-align: center;
-    margin-bottom: 1em;
 }
 
-.equipo:hover{
-    background-color: var(--principal);
-    color: var(--blanco);
+
+.tarjeta object{
+    position: relative;
+    width: 6em;
+    height: 4em;
+    /*z-index: 999;*/
 }
 
-.equipo img{
-    width: 5em;
-    height: 5.5em;
+.tarjeta h2{
+    color: var(--principal);
+    text-align: center;
+}
+
+.tarjeta img{
     padding-top: .5em;
-    transform: translateY(50px) scale(0.9) rotate(-5deg); /* Posición inicial */
-    opacity: 0;
-    animation: slideInZoomRotate 2s cubic-bezier(0.19, 1, 0.22, 1) forwards; /* Animación personalizada */
+    width: 75%;
+    height: auto;
+    transition: .5s ease;
 }
 
-a{
-    color: var(--texto);
-    text-decoration: none;
+.tarjeta img:hover{
+    transform: scale(1.1);
 }
 
-@keyframes slideInZoomRotate {
-    0% {
-        transform: translateY(50px) scale(0.9) rotate(-5deg);
-        opacity: 0;
-    }
-    60% {
-        transform: translateY(-10px) scale(1.05) rotate(2deg);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(0) scale(1) rotate(0deg);
-        opacity: 1;
-    }
+.tarjeta h3{
+    font-size: 2em;
+}
+
+.tarjeta svg{
+    fill: #FF4B44;
 }
 
 .text-footer{
