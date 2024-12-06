@@ -237,3 +237,6 @@ header a, .sub-header a{
     filter: contrast(1.2);
 }
 
+a:focus{
+    text-decoration: underline;
+}
