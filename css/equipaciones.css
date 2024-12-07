@@ -124,6 +124,113 @@ header a, .sub-header a{
     font-size: 1rem;
 }
 
+.menu-lateral{
+    position: sticky;
+    float: left;
+    width: 12em;
+    height: 52em;
+    border: 1px solid var(--principal);
+    background-color: var(--blanco);
+    text-align: center;
+    margin: .5em;
+    margin-top: 15em;
+    border-radius: 1em;
+    margin-bottom: 55em;
+    border: 2px solid black;
+}
+
+.menu-lateral h3{
+    text-decoration: underline;
+    width: 10em;
+}
+
+.menu-lateral a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--principal)
+}
+
+.menu-lateral a:hover{
+    filter: brightness(1.2);
+}
+
+.menu-lateral ul{
+    list-style-type: none;
+    padding: .2em;
+}
+
+.banner-lateral{
+    width: 12em;
+}
+
+.equipo-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 1.5em;
+}
+
+.equipo-menu img{
+    width: 2.5em;
+    padding-right: .2em;
+}
+
+.equipo-menu{
+    padding-bottom: .5em;
+}
+
+.colores {
+    padding: 0;
+    margin: 0;
+}
+
+.colores .color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    padding-left: 3em;
+    background-image: url('../imgs/sprite-colores.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 32px; 
+}
+
+/* Posiciones del sprite */
+.color.negro {
+    background-position: 0 -0.63em;
+}
+
+.color.blanco {
+    background-position: 0 -3.43em;
+}
+
+.color.azul {
+    background-position: 0 -6.2em;
+}
+
+.color.amarillo {
+    background-position: 0 -9em;
+}
+
+.color.rojo {
+    background-position: 0 -11.8em;
+}
+
+.color.gris {
+    background-position: 0 -14.6em;
+}
+
+.color.naranja {
+    background-position: 0 -17.5em;
+}
+
+.color.verde {
+    background-position: 0 -20.3em;
+}
+
 .equipo{
     display: flex;
     flex-direction: row;
@@ -137,9 +244,7 @@ header a, .sub-header a{
 }
 
 .equipo h2{
-
     padding-left: 5em;
-    
 }
 
 cite{
@@ -205,6 +310,116 @@ cite{
 
 .tarjeta h3{
     font-size: 2em;
+}
+
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--negro);
+    padding-top: 1em;
+    bottom: 0;
+}
+
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: .5em;
+    color: var(--principal);
+}
+
+.footer-item{
+   text-align: center;
+   
+}
+
+.footer-item h4{
+    text-decoration: underline;
+}
+
+.footer-item img{
+    width: 20em;
+}
+
+.newsletter{
+    border: 1px solid var(--principal);
+    border-radius: .5em;
+    height: 1em;
+    width: 20em;
+}
+
+.newsletter input[type=email]{
+    height: 1em;
+    border: none;
+    border-radius: 50em;
+}
+
+.newsletter a{
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: .3em;
+    border-radius: .5em;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes a{
+    text-decoration: none;
+    color: var(--principal);
+}
+
+.redes a:hover{
+    filter: saturate(2);
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+    height: 2.5em;
+    border: 1px solid var(--negro);
+    border-radius: 50em;
+    overflow: hidden;
+}
+
+.newsletter input[type=email]{
+    width: 100%;
+    border: none;
+    height: 100%;
+}
+
+.newsletter:hover {
+    border-color: var(--negro);
+    box-shadow: 0 0 5px var(--negro);
+}
+
+.newsletter input[type=email]{
+    text-align: center;
+}
+
+.newsletter input[type=email]:focus{
+    outline: none;
+}
+
+.newsletter a{
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding:.35em;
+    height: 100%;
+}
+
+.newsletter a:hover{
+    filter: contrast(1.2);
 }
 
 a:focus{

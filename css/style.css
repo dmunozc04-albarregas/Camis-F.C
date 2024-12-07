@@ -153,12 +153,8 @@ header a, .sub-header a{
 }
 
 .licencias img{
-    width: 3em;
+    width: 12em;
     /*background-color: #e4002b;*/
-}
-
-.licencias .licencia-fifa{
-    width: 5em;
 }
 
 .licencias i{
