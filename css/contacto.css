@@ -3,6 +3,7 @@
     --blanco: #fff;
     --negro: #000;
     --principal: #1c74bc;
+    --rojo: #ff3030;
 }
 
 * {
@@ -125,9 +126,63 @@ header a, .sub-header a{
     font-size: 1rem;
 }
 
+h1{
+    text-align: center;
+}
 
+.cabecera-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
 
+.cabecera-formulario img{
+    width: 4em;
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form label{
+    padding-top: .6em;
+    padding-bottom: .2em;
+}
+
+form input{
+    height: 2em;
+    text-align: center;
+}
+
+form input, textarea{
+    border: 1px solid var(--texto);
+    border-radius: .5em;
+}
+
+textarea{
+    margin-bottom: .5em;
+}
+
+.obligatorio{
+    color: var(--rojo);
+}
+
+form input[type="submit"], input[type="file"]::file-selector-button{
+    margin-top: .5em;
+    background-color: var(--principal);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+}
+
+label[for="id"]{  
+    text-decoration: underline;
+}
 
 .text-footer{
     display: flex;
