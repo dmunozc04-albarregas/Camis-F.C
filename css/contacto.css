@@ -173,7 +173,7 @@ textarea{
     color: var(--rojo);
 }
 
-form input[type="submit"], input[type="file"]::file-selector-button{
+form input[type="submit"]{
     margin-top: .5em;
     background-color: var(--principal);
     color: var(--blanco);
@@ -182,6 +182,52 @@ form input[type="submit"], input[type="file"]::file-selector-button{
 
 label[for="id"]{  
     text-decoration: underline;
+}
+
+.campo-formulario{
+    margin-top: .5em;
+}
+
+.campo-formulario label {
+    display: inline-block;
+    width: 16em;
+}
+
+.campo-formulario textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+label[for="info"]{  
+    width: 18em;
+}
+
+input[type="file"]{
+    border: none;
+}
+
+input[type="file"]::file-selector-button{
+    margin-top: .5em;
+    background-color: var(--principal);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+    border-radius: .5em;
+}
+
+input[type="file"]::file-selector-button:hover, input[type="submit"]:hover{
+    filter: saturate(2);
+}
+
+.campo-formulario input:valid, select:valid,textarea:valid{
+    border: 2px solid #58ff47;
+}
+
+.campo-formulario input:invalid, select:invalid, textarea:invalid{
+
+    border: 2px solid var(--rojo);
 }
 
 .text-footer{

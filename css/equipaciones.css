@@ -3,6 +3,9 @@
     --blanco: #fff;
     --negro: #000;
     --principal: #1c74bc;
+    --oro: #ffcf00;
+    --plata: #e3e4e5;
+    --bronce: #cd7f32;
 }
 
 * {
@@ -16,6 +19,10 @@ body {
     font-style: normal;
     margin: 0;
     color: var(--principal);
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
@@ -183,8 +190,8 @@ header a, .sub-header a{
 }
 
 .colores {
-    padding: 0;
-    margin: 0;
+    font-weight: bold;
+    margin-left: 1.2em;
 }
 
 .colores .color {
@@ -231,6 +238,81 @@ header a, .sub-header a{
 
 .color.verde {
     background-position: 0 -20.3em;
+}
+
+.top-ventas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--negro);
+    margin-right: 1em;
+    border-radius: 1em;
+    background-image: url("../imgs/banner-top-ventas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-ventas img{
+    width: 10em;
+}
+
+.top-ventas h1{
+    color: var(--blanco);
+    margin-right: 3em;
+}
+
+.segundo{
+    margin-top: 1.5em;
+}
+
+.tercero{
+    margin-top: 2.5em;
+}
+
+.circulo-primero{
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: 1em;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    right: 16.7em;
+    top: 3.5em;
+}
+
+.circulo-primero i{
+    color: var(--oro);
+}
+
+.circulo-segundo{
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: 1em;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    right: 30.5em;
+    top: 4.5em;
+}
+
+.circulo-segundo i{
+    color: var(--plata);
+}
+
+.circulo-tercero{
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: 1em;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    right: 14.5em;
+    top:4.5em;
+}
+
+.circulo-tercero i{
+    color: var(--bronce);
 }
 
 .equipo{
@@ -311,6 +393,7 @@ cite{
 }
 
 .tarjeta h3{
+    color: var(--negro);
     font-size: 2em;
 }
 
@@ -422,8 +505,4 @@ cite{
 
 .newsletter a:hover{
     filter: contrast(1.2);
-}
-
-a:focus{
-    text-decoration: underline;
 }
