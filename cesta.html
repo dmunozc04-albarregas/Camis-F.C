@@ -1,103 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <script src="https://kit.fontawesome.com/4ecb311d12.js" crossorigin="anonymous"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./imgs/icono_camis_fc.png">
-        <link rel="stylesheet" href="./css/cesta.css">
-        <title>Cesta / Camis F.C</title>
-    </head>
-    
-    <header> <!-- Header estático de la web -->
-        <a href="index.html"><img src="./imgs/logo_camis_fc.webp" alt=""></a>
-        <div class="buscador">
-            <input type="search" name="" id="" placeholder="Encuentra tu equipación 👕 / botas 👟 / balón ⚽ perfecto">
-            <i class="fa-solid fa-magnifying-glass fa-1x"></i>
-        </div>
-        <a href="#">
-            <div class="contenedor-enlaces">
-                <div class="enlaces-header">
-                    <i class="fa-solid fa-user fa-2x"></i>
-                    <p>Acceder</p>
-                </div>
-        </a>
 
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ecb311d12.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imgs/icono_camis_fc.png">
+    <link rel="stylesheet" href="./css/cesta.css">
+    <title>Cesta / Camis F.C</title>
+</head>
 
-        <a href="https://www.acatecspain.com/" target="_blank">
-            <div class="enlaces-header">
-                <i class="fa-solid fa-graduation-cap fa-2x"></i>
-                <p>Academia</p>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="enlaces-header">
-                <i class="fa-solid fa-basket-shopping fa-2x"></i>
-                <p>Cesta</p>
-            </div>
-        </a>
-
-        </div>
-    </header>
-
-    <div class="sub-header">
-        <h3 class="texto-header"><a href="equipaciones.html">Equipaciones</a></h3>
-        <h3 class="texto-header"><a href="calzado.html">Calzado</a></h3>
-        <h3 class="texto-header"><a href="balones.html">Balones</a></h3>
-        <h3 class="texto-header"><a href="contacto.html">Contacto</a></h3>
+<header> <!-- Header estático de la web -->
+    <a href="index.html"><img src="./imgs/logo_camis_fc.webp" alt=""></a>
+    <div class="buscador">
+        <input type="search" name="" id="" placeholder="Encuentra tu equipación 👕 / botas 👟 / balón ⚽ perfecto">
+        <i class="fa-solid fa-magnifying-glass fa-1x"></i>
     </div>
+    <a href="#">
+        <div class="contenedor-enlaces">
+            <div class="enlaces-header">
+                <i class="fa-solid fa-user fa-2x"></i>
+                <p>Acceder</p>
+            </div>
+    </a>
 
-    <div>
+
+    <a href="https://www.acatecspain.com/" target="_blank">
+        <div class="enlaces-header">
+            <i class="fa-solid fa-graduation-cap fa-2x"></i>
+            <p>Academia</p>
+        </div>
+    </a>
+
+    <a href="cesta.html">
+        <div class="enlaces-header">
+            <i class="fa-solid fa-basket-shopping fa-2x"></i>
+            <p>Cesta</p>
+        </div>
+    </a>
+
+    </div>
+</header>
+
+<div class="sub-header">
+    <h3 class="texto-header"><a href="equipaciones.html">Equipaciones</a></h3>
+    <h3 class="texto-header"><a href="calzado.html">Calzado</a></h3>
+    <h3 class="texto-header"><a href="balones.html">Balones</a></h3>
+    <h3 class="texto-header"><a href="contacto.html">Contacto</a></h3>
+</div>
+
+<div class="contenedor-cesta">
+    <div class="cesta">
         <h1>Cesta de la compra</h1>
 
         <table>
-            <th>Resumen de la compra</th>
             <tr>
-                <td>Producto</td>
-                <td>Cantidad</td>
-                <td>Precio</td>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>1º Equipación AD Mérida 24/25</td>
+                <td><input type="number" value="2"></td>
+                <td>58.99€</td>
+            </tr>
+
+            <tr>
+                <td>Balón Puma La Liga Orbita 24/25</td>
+                <td><input type="number" value="1"></td>
+                <td>69.99€</td>
+            </tr>
+
+            <tr>
+                <td>2º Equipación CD Arenteiro 24/25</td>
+                <td><input type="number" value="1"></td>
+                <td>48.99€</td>
+            </tr>
+
+            <tr>
+                <td>Bota Munich Trick</td>
+                <td><input type="number" value="1"></td>
+                <td>49.99€</td>
             </tr>
         </table>
+
     </div>
 
-    <footer>
-        <h4 class="text-footer">Camis FC 2024 ® - Todos los derechos reservados</h4>
-        <div class="flex-footer">
+    <div class="resumen-compra">
+        <h1>Resumen de tu compra</h1>
 
-            <div class="footer-item">
-                <h4>Métodos de pago aceptado</h4>
-                <img src="./imgs/metodos-pago.webp" alt="">
+        <div class="ticket">
+            <p>-------------------------------------------------------------------------</p>
+            <h2>Ticket</h2>
+            <div class="items-ticket">
+                <p>1º Equipación AD Mérida 24/25</p>
+                <p>58.99€</p>
             </div>
 
-            <div class="footer-item">
-                <h4>Newsletter</h4>
-                <p>¡Suscríbete y no te pierdas ninguna novedad!</p>
-                <div class="newsletter">
-                    <input type="email" placeholder="contacto@camisfc.es">
-                    <a href="">Suscribirse</a>
-                </div>
+            <div class="items-ticket">
+                <p>Balón Puma La Liga Orbita 24/25</p>
+                <p>69.99€</p>
             </div>
 
-            <div class="footer-item">
-                <h4>Síganos en redes</h4>
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-                </div>
+            <div class="items-ticket">
+                <p>2º Equipación CD Arenteiro 24/25</p>
+                <p>48.99€</p>
             </div>
 
+            <div class="items-ticket">
+                <p>Bota Munich Trick</p>
+                <p>49.99€</p>
+            </div>
+
+            <h4>Total: 227,78€</h4>
         </div>
-    </footer>
+    </div>
+
+</div>
+
+<footer>
+    <h4 class="text-footer">Camis FC 2024 ® - Todos los derechos reservados</h4>
+    <div class="flex-footer">
+
+        <div class="footer-item">
+            <h4>Métodos de pago aceptado</h4>
+            <img src="./imgs/metodos-pago.webp" alt="">
+        </div>
+
+        <div class="footer-item">
+            <h4>Newsletter</h4>
+            <p>¡Suscríbete y no te pierdas ninguna novedad!</p>
+            <div class="newsletter">
+                <input type="email" placeholder="contacto@camisfc.es">
+                <a href="">Suscribirse</a>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <h4>Síganos en redes</h4>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
 
 
 <body>
-    
+
 </body>
+
 </html>

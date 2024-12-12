@@ -270,6 +270,7 @@ header a, .sub-header a{
     background-image: url("../imgs/banner-top-ventas.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: .2em;
 }
 
 .top-ventas img{
@@ -297,7 +298,7 @@ header a, .sub-header a{
     border-radius: 100%;
     z-index: 1;
     position: relative;
-    right: 16.7em;
+    right: 16.8em;
     top: 3.5em;
 }
 
@@ -312,7 +313,7 @@ header a, .sub-header a{
     border-radius: 100%;
     z-index: 1;
     position: relative;
-    right: 30.5em;
+    right: 30.8em;
     top: 4.5em;
 }
 
