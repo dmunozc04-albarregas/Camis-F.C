@@ -135,12 +135,13 @@ header a, .sub-header a{
     z-index: 1;
     position: fixed;
     top: 16em;
-    left: 39em;
+    left: 97%;
     text-decoration: none;
     color: var(--blanco);
     background-color: var(--principal);
     padding: .4em;
     border-radius: 30%;
+    transform: translateX(-50%);
 }
 
 .btn-inicio:hover{

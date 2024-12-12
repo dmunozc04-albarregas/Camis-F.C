@@ -133,11 +133,30 @@ header a, .sub-header a{
     font-size: 1rem;
 }
 
+.btn-inicio{
+    z-index: 1;
+    position: fixed;
+    top: 16em;
+    left: 97%;
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: .4em;
+    border-radius: 30%;
+    transform: translateX(-50%);
+}
+
+.btn-inicio:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
 .menu-lateral{
     position: sticky;
     float: left;
     width: 12em;
-    height: 52em;
+    height: 65em;
     border: 1px solid var(--principal);
     background-color: var(--blanco);
     text-align: center;
@@ -255,6 +274,7 @@ header a, .sub-header a{
 
 .top-ventas img{
     width: 10em;
+    transition: .5s ease;
 }
 
 .top-ventas h1{
@@ -388,7 +408,7 @@ cite{
     transition: .5s ease;
 }
 
-.tarjeta img:hover{
+.tarjeta img:hover, .top-ventas img:hover{
     transform: scale(1.1);
 }
 
