@@ -224,6 +224,11 @@ label[for="info"]{
     width: 18em;
 }
 
+label[for="fecha-compra"]{  
+    width: 18em;
+    padding-right: .5em
+}
+
 input[type="file"]{
     border: none;
 }

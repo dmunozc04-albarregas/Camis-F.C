@@ -1,0 +1,25 @@
+:root{
+    --texto: #333;
+    --blanco: #fff;
+    --negro: #000;
+    --principal: #1c74bc;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--principal);
+}
+
+a{
+    background-color: var(--principal);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: .8em;
+    border-radius: .5em;
+}
+
+a:hover{
+    filter: brightness(1.1);
+}
